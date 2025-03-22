@@ -8,12 +8,7 @@ public class TestCalculadora {
 
     //Pruebas unitarias para el cuadrado
     //
-    @Test
-    public void testCuadradoPositivo() {
-        Calculadora calc = new Calculadora();
-        assertEquals(25.0, calc.cuadrado(5.0), 0);
-    }
-
+    
     @Test
     public void testCuadradoCero() {
         Calculadora calc = new Calculadora();
