@@ -38,7 +38,7 @@ public class ProtobootappApplication {
     }
     
     //Se ejecuta con http://localhost:8080/cubo o http://localhost:8080/cubo?numero=5
-    @GetMapping("/cubo")
+    @GetMapping("/cuboX")
     public String cubo(@RequestParam(value = "numero", defaultValue = "0") Double numero) {
         this.calculadora = new Calculadora();
         return String.format("El cubo de %f es %f", numero, this.calculadora.cubo(numero));
